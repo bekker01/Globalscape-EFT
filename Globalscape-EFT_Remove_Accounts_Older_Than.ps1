@@ -25,7 +25,7 @@ $UserList = @()
 $RemovedAccounts = @()
 
 # Select the first site and Get Users
-$site = $SFTPSites.Item(0)
+$site = $SFTPSites.Item(0) # If you have multiple sites you can specify it here, first site 0, second 1 etc
 $users = $site.GetSettingsLevelUsers('External Warm-Body Account') # specify your User Settings Template here
 
 # For each user, compare the dates and delete if they have not connected in the past 150 days and have not been created in the past 90 days
