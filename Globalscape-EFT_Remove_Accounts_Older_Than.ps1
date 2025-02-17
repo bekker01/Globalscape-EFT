@@ -6,7 +6,7 @@
 $SFTPServer = New-Object -COM "SFTPCOMInterface.CIServer"
 
 # Auth Parameters
-$ComputerName = "NLAGSFMVA01"
+$ComputerName = "server_name" # Enter your GlobalScape EFT server hostname here
 $ServicePort = 1100
 $Username = "username"	# Define your username here
 $Password = "password"  # Define your password here
